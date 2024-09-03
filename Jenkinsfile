@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', credentialsId: 'github-credentials', url: 'https://github.com/Gs2309/my-webapp_Tomcatdeploy.git'
+                git branch: 'main', credentialsId: 'git-crd', url: 'https://github.com/Gs2309/my-webapp_Tomcatdeploy.git'
             }
         }
         stage('Build') {
